@@ -5,10 +5,15 @@ This is apart of an NSERC Research project by Taylor Adam and James Behnke to de
 
 ### Installation Instructions:
 Make sure you've installed the following:
+
 Node.js and npm
+
 git
+
 react-native-cli: $ npm install -g react-native-cli
+
 yarn : $ npm install -g yarn
+
 If on Mac: $ gem install cocoapods
 
 Ensure you have iPhone or Android device connected or a simulator running.
