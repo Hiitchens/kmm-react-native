@@ -5,4 +5,15 @@ This is apart of an NSERC Research project by Taylor Adam and James Behnke to de
 
 ## Screenshots:
 
-![alt text](https://i.imgur.com/L2cUJ66.png)
+![alt text](https://i.imgur.com/izQ1Yv5.png)
+
+![alt text](https://imgur.com/4KndZyh.png)
+
+![alt text](https://imgur.com/OSYarUq.png)
+
+![alt text](https://imgur.com/sTRpvhq.png)
+
+![alt text](https://imgur.com/mdxBv4v.png)
+
+
+
