@@ -1,0 +1,20 @@
+{
+  "name": "multimedia",
+  "title": "Multimedia",
+  "version": "0.0.1",
+  "description": "",
+  "platform": "1.0.*",
+  "screens": [
+    {
+      "name": "MultiMedia"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "MultiMedia",
+      "title": "Multi media",
+      "description": "A shortcut for MultiMedia",
+      "screen": "@.MultiMedia"
+    }
+  ]
+}
