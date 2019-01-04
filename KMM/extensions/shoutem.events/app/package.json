@@ -1,0 +1,17 @@
+{
+  "name": "shoutem.events",
+  "version": "1.7.1-build1532513598705",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "react-native-calendar-manager": "shoutem/react-native-calendar-manager#de1aae06e0a17df99cc55fcd5b31b4b5c55f0589"
+  },
+  "peerDependencies": {
+    "@shoutem/core": "*"
+  },
+  "rnpm": {
+    "commands": {
+      "postlink": "node node_modules/shoutem.events/scripts/link.js"
+    }
+  }
+}

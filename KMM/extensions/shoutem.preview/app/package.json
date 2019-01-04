@@ -1,0 +1,7 @@
+{
+  "name": "shoutem.preview",
+  "version": "1.7.0-build1531925336806",
+  "description": "Shoutem preview extension",
+  "main": "index.js",
+  "license": "ISC"
+}

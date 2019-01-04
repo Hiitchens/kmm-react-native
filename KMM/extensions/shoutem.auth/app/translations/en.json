@@ -1,0 +1,41 @@
+{
+  "shoutem": {
+    "auth": {
+      "doneNavBarButton": "Done",
+      "editProfileButton": "EDIT PROFILE",
+      "editProfileNavBarTitle": "EDIT PROFILE",
+      "emailPlaceholder": "Email",
+      "facebookLogInButton": "FACEBOOK",
+      "formNotFilledErrorMessage": "All form fields are required.",
+      "imageSelectErrorMessage": "Image selection error.",
+      "invalidCredentialsErrorMessage": "Wrong username / email or password. Please try again.",
+      "invalidEmailFormatErrorMessage": "Wrong email format. Make sure your email format is name@domain.com",
+      "invalidPasswordFormatErrorMessage": "Password has to be at least 6 characters long. Please try again.",
+      "invalidUsernameFormatErrorMessage": "Please change the username so it has at least 3 characters, starts with a letter and contains only letters, numbers and underscores.",
+      "loggedInUserInfo": "Username: {{username}}",
+      "logInButton": "LOG IN",
+      "loginCancelErrorMessage": "Login was cancelled.",
+      "loginFailedErrorTitle": "Login failed",
+      "logInNavBarTitle": "LOG IN",
+      "noAccountSectionTitle": "Not a member?",
+      "passwordPlaceholder": "Password",
+      "profileNavBarLogoutButton": "Logout",
+      "profileNavBarTitle": "PROFILE",
+      "profileUpdatingErrorMessage": "There was an error while updating your profile. Please try again.",
+      "profileUpdatingErrorTitle": "Update failed",
+      "registerButton": "REGISTER",
+      "registerNavBarTitle": "REGISTER",
+      "registrationFailedErrorTitle": "Registration failed",
+      "socialLoginSectionTitle": "or sign in/sign up with your other account",
+      "tokenErrorMessage": "Access token is not valid.",
+      "unknownEmailErrorMessage": "Your username / email was not found.",
+      "userBioTitle": "Bio",
+      "userLocation": "Location",
+      "userNameAndSurname": "Name and surname",
+      "usernameOrEmailPlaceholder": "Username or Email",
+      "usernamePlaceholder": "Username",
+      "usernameTakenErrorMessage": "That email or username is taken. Please choose another one or try to sign in.",
+      "userWebsite": "Website"
+    }
+  }
+}

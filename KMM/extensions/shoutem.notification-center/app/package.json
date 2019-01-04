@@ -1,0 +1,8 @@
+{
+  "name": "shoutem.notification-center",
+  "version": "1.7.0-build1531925283552",
+  "description": "Manage push notification settings within the app",
+  "peerDependencies": {
+    "@shoutem/core": "*"
+  }
+}

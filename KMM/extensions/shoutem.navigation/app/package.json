@@ -1,0 +1,8 @@
+{
+  "name": "shoutem.navigation",
+  "version": "1.7.5-build1542900775704",
+  "description": "Main navigation",
+  "dependencies": {
+    "react-native-side-menu": "1.1.3"
+  }
+}
