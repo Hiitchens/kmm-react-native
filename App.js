@@ -6,61 +6,61 @@ import { Table, TableWrapper, Row, Cell } from 'react-native-table-component';
 export default class App extends React.Component {
     constructor(props) {
         super(props);
-        const sadButton = (value) => (
-            <TouchableOpacity onPress={() => this._alertIndex(value)}>
+        const sadButton = (value, rating) => (
+            <TouchableOpacity onPress={() => this._alertIndex(value, rating)}>
                 <Emoji name="weary" style={{fontSize: 40, textAlign: 'center'}}/>
             </TouchableOpacity>
         );
-        const neutralButton = (value) => (
-            <TouchableOpacity onPress={() => this._alertIndex(value)}>
+        const neutralButton = (value, rating) => (
+            <TouchableOpacity onPress={() => this._alertIndex(value, rating)}>
                 <Emoji name="neutral_face" style={{fontSize: 40, textAlign: 'center'}}/>
             </TouchableOpacity>
         );
-        const happyButton = (value) => (
-            <TouchableOpacity onPress={() => this._alertIndex(value)}>
+        const happyButton = (value, rating) => (
+            <TouchableOpacity onPress={() => this._alertIndex(value, rating)}>
                 <Emoji name="smile" style={{fontSize: 40, textAlign: 'center'}}/>
             </TouchableOpacity>
         );
         this.state = {
             tableHead: ['Exercise', 'Pain', 'Some Difficulties', 'No Problems!'],
             tableData: [
-                ['Cross Body Reach', sadButton('0101'),
-                    neutralButton('0101'),
-                    happyButton('0101')],
-                ['Pendulum Swing',  sadButton('0102'),
-                    neutralButton('0102'),
-                    happyButton('0102')
+                ['Cross Body Reach', sadButton('0101', '1'),
+                    neutralButton('0101', '2'),
+                    happyButton('0101', '3')],
+                ['Pendulum Swing',  sadButton('0102', '1'),
+                    neutralButton('0102', '2'),
+                    happyButton('0102', '3')
                    ],
-                ['Hanging Arm Chair Stretch',  sadButton('0103'),
-                    neutralButton('0103'),
-                    happyButton('0103')],
-                ['Gravity Stretch for the Shoulder',  sadButton('0104'),
-                    neutralButton('0104'),
-                    happyButton('0104')],
-                ['Wall Walk',  sadButton('0105'),
-                    neutralButton('0105'),
-                    happyButton('0105')],
-                ['Flexion Exercise',  sadButton('0106'),
-                    neutralButton('0106'),
-                    happyButton('0106')],
-                ['Extension Exercise',  sadButton('0107'),
-                    neutralButton('0107'),
-                    happyButton('0107')],
-                ['Abduction and Adduction Exercise',  sadButton('0108'),
-                    neutralButton('0108'),
-                    happyButton('0108')],
+                ['Hanging Arm Chair Stretch',  sadButton('0103', '1'),
+                    neutralButton('0103', '2'),
+                    happyButton('0103', '3')],
+                ['Gravity Stretch for the Shoulder',  sadButton('0104', '1'),
+                    neutralButton('0104', '2'),
+                    happyButton('0104', '3')],
+                ['Wall Walk',  sadButton('0105', '1'),
+                    neutralButton('0105', '2'),
+                    happyButton('0105', '3')],
+                ['Flexion Exercise',  sadButton('0106', '1'),
+                    neutralButton('0106', '2'),
+                    happyButton('0106', '3')],
+                ['Extension Exercise',  sadButton('0107', '1'),
+                    neutralButton('0107', '2'),
+                    happyButton('0107', '3')],
+                ['Abduction and Adduction Exercise',  sadButton('0108', '1'),
+                    neutralButton('0108', '2'),
+                    happyButton('0108', '3')],
 
             ]
         }
     }
 
 
-    _alertIndex(index) {
-        Alert.alert(`You have successfully rated exercise ${index}`);
-        this.componentDidMount();
+    _alertIndex(index, rating) {
+        Alert.alert(`You have successfully rated exercise ${index} as a ${rating}`);
+        this.componentDidMount(index,rating);
     }
 
-    componentDidMount()  {
+    componentDidMount(id, rating)  {
         return fetch('http://45.33.42.72:1234/exerciseRating',
             {
                 method: 'POST',
@@ -72,9 +72,9 @@ export default class App extends React.Component {
                     client_id: "5c0744719f1f8c143735de8d",
                     exercises: [
                         {
-                            name: "Cross Body Reach",
+                            name: id,
                             condition: "Frozen Shoulder",
-                            rating: "3"
+                            rating: rating
                         }
                     ]
                 }),
