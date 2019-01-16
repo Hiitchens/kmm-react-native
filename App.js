@@ -6,33 +6,49 @@ import { Table, TableWrapper, Row, Cell } from 'react-native-table-component';
 export default class App extends React.Component {
     constructor(props) {
         super(props);
+        const sadButton = (value) => (
+            <TouchableOpacity onPress={() => this._alertIndex(value)}>
+                <Emoji name="weary" style={{fontSize: 40, textAlign: 'center'}}/>
+            </TouchableOpacity>
+        );
+        const neutralButton = (value) => (
+            <TouchableOpacity onPress={() => this._alertIndex(value)}>
+                <Emoji name="neutral_face" style={{fontSize: 40, textAlign: 'center'}}/>
+            </TouchableOpacity>
+        );
+        const happyButton = (value) => (
+            <TouchableOpacity onPress={() => this._alertIndex(value)}>
+                <Emoji name="smile" style={{fontSize: 40, textAlign: 'center'}}/>
+            </TouchableOpacity>
+        );
         this.state = {
             tableHead: ['Exercise', 'Pain', 'Some Difficulties', 'No Problems!'],
             tableData: [
-                ['Cross Body Reach', <Emoji name="weary" style={{fontSize: 40, textAlign: 'center'}}/>,
-                    <Emoji name="neutral_face" style={{fontSize: 40, textAlign: 'center'}}/>,
-                    <Emoji name="smile" style={{fontSize: 40, textAlign: 'center'}}/>],
-                ['Pendulum Swing', <Emoji name="weary" style={{fontSize: 40, textAlign: 'center'}}/>,
-                    <Emoji name="neutral_face" style={{fontSize: 40, textAlign: 'center'}}/>,
-                    <Emoji name="smile" style={{fontSize: 40, textAlign: 'center'}}/>],
-                ['Hanging Arm Chair Stretch', <Emoji name="weary" style={{fontSize: 40, textAlign: 'center'}}/>,
-                    <Emoji name="neutral_face" style={{fontSize: 40, textAlign: 'center'}}/>,
-                    <Emoji name="smile" style={{fontSize: 40, textAlign: 'center'}}/>],
-                ['Gravity Stretch for the Shoulder', <Emoji name="weary" style={{fontSize: 40, textAlign: 'center'}}/>,
-                    <Emoji name="neutral_face" style={{fontSize: 40, textAlign: 'center'}}/>,
-                    <Emoji name="smile" style={{fontSize: 40, textAlign: 'center'}}/>],
-                ['Wall Walk', <Emoji name="weary" style={{fontSize: 40, textAlign: 'center'}}/>,
-                    <Emoji name="neutral_face" style={{fontSize: 40, textAlign: 'center'}}/>,
-                    <Emoji name="smile" style={{fontSize: 40, textAlign: 'center'}}/>],
-                ['Flexion Exercise', <Emoji name="weary" style={{fontSize: 40, textAlign: 'center'}}/>,
-                    <Emoji name="neutral_face" style={{fontSize: 40, textAlign: 'center'}}/>,
-                    <Emoji name="smile" style={{fontSize: 40, textAlign: 'center'}}/>],
-                ['Extension Exercise', <Emoji name="weary" style={{fontSize: 40, textAlign: 'center'}}/>,
-                    <Emoji name="neutral_face" style={{fontSize: 40, textAlign: 'center'}}/>,
-                    <Emoji name="smile" style={{fontSize: 40, textAlign: 'center'}}/>],
-                ['Abduction and Adduction Exercise', <Emoji name="weary" style={{fontSize: 40, textAlign: 'center'}}/>,
-                    <Emoji name="neutral_face" style={{fontSize: 40, textAlign: 'center'}}/>,
-                    <Emoji name="smile" style={{fontSize: 40, textAlign: 'center'}}/>],
+                ['Cross Body Reach', sadButton('0101'),
+                    neutralButton('0101'),
+                    happyButton('0101')],
+                ['Pendulum Swing',  sadButton('0102'),
+                    neutralButton('0102'),
+                    happyButton('0102')
+                   ],
+                ['Hanging Arm Chair Stretch',  sadButton('0103'),
+                    neutralButton('0103'),
+                    happyButton('0103')],
+                ['Gravity Stretch for the Shoulder',  sadButton('0104'),
+                    neutralButton('0104'),
+                    happyButton('0104')],
+                ['Wall Walk',  sadButton('0105'),
+                    neutralButton('0105'),
+                    happyButton('0105')],
+                ['Flexion Exercise',  sadButton('0106'),
+                    neutralButton('0106'),
+                    happyButton('0106')],
+                ['Extension Exercise',  sadButton('0107'),
+                    neutralButton('0107'),
+                    happyButton('0107')],
+                ['Abduction and Adduction Exercise',  sadButton('0108'),
+                    neutralButton('0108'),
+                    happyButton('0108')],
 
             ]
         }
@@ -40,11 +56,11 @@ export default class App extends React.Component {
 
 
     _alertIndex(index) {
-        Alert.alert(`You have successfully rated exercise ${index + 1}`);
+        Alert.alert(`You have successfully rated exercise ${index}`);
         this.componentDidMount();
     }
 
-    componentDidMount() {
+    componentDidMount()  {
         return fetch('http://45.33.42.72:1234/exerciseRating',
             {
                 method: 'POST',
