@@ -1,0 +1,47 @@
+{
+  "name": "frozen-shoulder",
+  "title": "Frozen Shoulder",
+  "version": "0.0.1",
+  "description": "This will hold all Frozen Shoulder exercises",
+  "platform": "1.0.*",
+  "screens": [
+    {
+      "name": "CrossBodyReach"
+    },
+    {
+      "name": "PendulumSwing"
+    },
+    {
+      "name": "HangingArmchairRest"
+    },
+    {
+      "name": "GravityStretchShoulder"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "CrossBodyReach",
+      "title": "Cross body reach",
+      "description": "A shortcut for CrossBodyReach",
+      "screen": "@.CrossBodyReach"
+    },
+    {
+      "name": "PendulumSwing",
+      "title": "Pendulum swing",
+      "description": "A shortcut for PendulumSwing",
+      "screen": "@.PendulumSwing"
+    },
+    {
+      "name": "HangingArmchairRest",
+      "title": "Hanging armchair rest",
+      "description": "A shortcut for HangingArmchairRest",
+      "screen": "@.HangingArmchairRest"
+    },
+    {
+      "name": "GravityStretchShoulder",
+      "title": "Gravity stretch shoulder",
+      "description": "A shortcut for GravityStretchShoulder",
+      "screen": "@.GravityStretchShoulder"
+    }
+  ]
+}

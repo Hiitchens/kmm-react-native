@@ -1,0 +1,83 @@
+{
+  "name": "bool",
+  "title": "Bool",
+  "version": "0.0.1",
+  "description": "",
+  "platform": "1.0.*",
+  "screens": [
+    {
+      "name": "App"
+    },
+    {
+      "name": "CrossBodyReach"
+    },
+    {
+      "name": "Pendulum_Swing"
+    },
+    {
+      "name": "Hanging_Arm_Chair_Stretch"
+    },
+    {
+      "name": "Gravity"
+    },
+    {
+      "name": "FlexionEx"
+    },
+    {
+      "name": "ExtensionwToworWa"
+    },
+    {
+      "name": "AbductionandAdduction"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "App",
+      "title": "App",
+      "description": "A shortcut for App",
+      "screen": "@.App"
+    },
+    {
+      "name": "CrossBodyReach",
+      "title": "Cross body reach",
+      "description": "A shortcut for CrossBodyReach",
+      "screen": "@.CrossBodyReach"
+    },
+    {
+      "name": "Pendulum_Swing",
+      "title": "Pendulum_swing",
+      "description": "A shortcut for Pendulum_Swing",
+      "screen": "@.Pendulum_Swing"
+    },
+    {
+      "name": "Hanging_Arm_Chair_Stretch",
+      "title": "Hanging_arm_chair_stretch",
+      "description": "A shortcut for Hanging_Arm_Chair_Stretch",
+      "screen": "@.Hanging_Arm_Chair_Stretch"
+    },
+    {
+      "name": "GravityStretch",
+      "title": "Gravity stretch",
+      "description": "A shortcut for Gravity",
+      "screen": "@.Gravity"
+    },
+    {
+      "name": "FlexionExercise",
+      "title": "Flexion exercise",
+      "description": "A shortcut for FlexionEx",
+      "screen": "@.FlexionEx"
+    },
+    {
+      "name": "ExtensionwToworWa",
+      "title": "Extensionw towor wa",
+      "description": "A shortcut for ExtensionwToworWa",
+      "screen": "@.ExtensionwToworWa"
+    },
+    {
+      "name": "AbductionandAdduction",
+      "title": "Abductionand adduction",
+      "description": "A shortcut for AbductionandAdduction",
+      "screen": "@.AbductionandAdduction"
+    }
+  ]
+}

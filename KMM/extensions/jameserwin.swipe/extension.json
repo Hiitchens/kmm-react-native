@@ -1,0 +1,20 @@
+{
+  "name": "swipe",
+  "title": "Swipe",
+  "version": "0.0.1",
+  "description": "",
+  "platform": "1.0.*",
+  "screens": [
+    {
+      "name": "SwipeoutExample"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "SwipeoutExample",
+      "title": "Swipeout example",
+      "description": "A shortcut for SwipeoutExample",
+      "screen": "@.SwipeoutExample"
+    }
+  ]
+}

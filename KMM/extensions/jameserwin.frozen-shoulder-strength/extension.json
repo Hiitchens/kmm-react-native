@@ -1,0 +1,47 @@
+{
+  "name": "frozen-shoulder-strength",
+  "title": "Frozen shoulder strength",
+  "version": "0.0.1",
+  "description": "This will hold the Strength building exercises",
+  "platform": "1.0.*",
+  "screens": [
+    {
+      "name": "WallWalk"
+    },
+    {
+      "name": "FlexionExercise"
+    },
+    {
+      "name": "Extension"
+    },
+    {
+      "name": "AbductionAdduction"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "WallWalk",
+      "title": "Wall walk",
+      "description": "A shortcut for WallWalk",
+      "screen": "@.WallWalk"
+    },
+    {
+      "name": "FlexionExercise",
+      "title": "Flexion exercise",
+      "description": "A shortcut for FlexionExercise",
+      "screen": "@.FlexionExercise"
+    },
+    {
+      "name": "Extension",
+      "title": "Extension",
+      "description": "A shortcut for Extension",
+      "screen": "@.Extension"
+    },
+    {
+      "name": "AbductionAdduction",
+      "title": "Abduction adduction",
+      "description": "A shortcut for AbductionAdduction",
+      "screen": "@.AbductionAdduction"
+    }
+  ]
+}

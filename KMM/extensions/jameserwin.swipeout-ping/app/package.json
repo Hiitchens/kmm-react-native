@@ -1,0 +1,9 @@
+{
+  "name": "jameserwin.swipeout-ping",
+  "version": "0.0.1-build1548814069336",
+  "description": "",
+  "dependencies": {
+    "react-native-emoji": "^1.3.1",
+    "react-native-swipeout": "^2.3.6"
+  }
+}

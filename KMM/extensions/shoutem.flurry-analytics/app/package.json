@@ -1,0 +1,13 @@
+{
+  "name": "shoutem.flurry-analytics",
+  "version": "1.8.0-build1548451030443",
+  "description": "Measure and analyze activity across your app with Flurry analytics",
+  "dependencies": {
+    "react-native-flurry-analytics": "shoutem/react-native-flurry-analytics#edd91ded72130d040e3d595799fa1447726cf7b4"
+  },
+  "rnpm": {
+    "commands": {
+      "postlink": "node node_modules/shoutem.flurry-analytics/link.js"
+    }
+  }
+}

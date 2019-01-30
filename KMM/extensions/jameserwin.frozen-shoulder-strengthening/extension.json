@@ -1,0 +1,38 @@
+{
+  "name": "frozen-shoulder-strengthening",
+  "title": "Frozen shoulder_strengthening",
+  "version": "0.0.1",
+  "description": "",
+  "platform": "1.0.*",
+  "screens": [
+    {
+      "name": "AbductionandAdduction"
+    },
+    {
+      "name": "ExtensionwToworWa"
+    },
+    {
+      "name": "FlexionEx"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "AbductionandAdduction",
+      "title": "Abductionand adduction",
+      "description": "A shortcut for AbductionandAdduction",
+      "screen": "@.AbductionandAdduction"
+    },
+    {
+      "name": "ExtensionwToworWa",
+      "title": "Extensionw towor wa",
+      "description": "A shortcut for ExtensionwToworWa",
+      "screen": "@.ExtensionwToworWa"
+    },
+    {
+      "name": "FlexionEx",
+      "title": "Flexion ex",
+      "description": "A shortcut for FlexionEx",
+      "screen": "@.FlexionEx"
+    }
+  ]
+}

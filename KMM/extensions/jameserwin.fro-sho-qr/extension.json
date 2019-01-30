@@ -1,0 +1,20 @@
+{
+  "name": "fro-sho-qr",
+  "title": "Fro sho qr",
+  "version": "0.0.1",
+  "description": "",
+  "platform": "1.0.*",
+  "screens": [
+    {
+      "name": "FrozenShoulderQuickRate"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "FrozenShoulderQuickRate",
+      "title": "Frozen shoulder quick rate",
+      "description": "A shortcut for FrozenShoulderQuickRate",
+      "screen": "@.FrozenShoulderQuickRate"
+    }
+  ]
+}

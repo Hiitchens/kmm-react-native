@@ -1,0 +1,20 @@
+{
+  "name": "swipeout-ping",
+  "title": "Swipeout ping",
+  "version": "0.0.1",
+  "description": "",
+  "platform": "1.0.*",
+  "screens": [
+    {
+      "name": "FlexionSwipeout"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "FlexionSwipeout",
+      "title": "Flexion swipeout",
+      "description": "A shortcut for FlexionSwipeout",
+      "screen": "@.FlexionSwipeout"
+    }
+  ]
+}

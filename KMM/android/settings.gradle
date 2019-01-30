@@ -1,0 +1,69 @@
+rootProject.name = 'ShoutemApp'
+include ':react-native-fetch-blob'
+project(':react-native-fetch-blob').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fetch-blob/android')
+include ':react-native-pdf'
+project(':react-native-pdf').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-pdf/android')
+include ':shoutem.web-view'
+project(':shoutem.web-view').projectDir = new File(rootProject.projectDir, '../node_modules/shoutem.web-view/android')
+include ':shoutem.places'
+project(':shoutem.places').projectDir = new File(rootProject.projectDir, '../node_modules/shoutem.places/android')
+include ':shoutem.ical-events'
+project(':shoutem.ical-events').projectDir = new File(rootProject.projectDir, '../node_modules/shoutem.ical-events/android')
+include ':react-native-google-analytics-bridge'
+project(':react-native-google-analytics-bridge').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-google-analytics-bridge/android')
+include ':react-native-flurry-analytics'
+project(':react-native-flurry-analytics').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-flurry-analytics/android')
+include ':shoutem.flurry-analytics'
+project(':shoutem.flurry-analytics').projectDir = new File(rootProject.projectDir, '../node_modules/shoutem.flurry-analytics/android')
+include ':react-native-calendar-manager'
+project(':react-native-calendar-manager').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-calendar-manager/android')
+include ':shoutem.events'
+project(':shoutem.events').projectDir = new File(rootProject.projectDir, '../node_modules/shoutem.events/android')
+include ':shoutem.cms'
+project(':shoutem.cms').projectDir = new File(rootProject.projectDir, '../node_modules/shoutem.cms/android')
+include ':react-native-camera'
+project(':react-native-camera').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-camera/android')
+include ':shoutem.camera'
+project(':shoutem.camera').projectDir = new File(rootProject.projectDir, '../node_modules/shoutem.camera/android')
+include ':react-native-fbsdk'
+project(':react-native-fbsdk').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fbsdk/android')
+include ':react-native-video'
+project(':react-native-video').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-video/android')
+include ':react-native-splash-screen'
+project(':react-native-splash-screen').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-splash-screen/android')
+include ':react-native-restart'
+project(':react-native-restart').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-restart/android')
+include ':react-native-action-sheet'
+project(':react-native-action-sheet').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-action-sheet/android')
+include ':react-native-device-info'
+project(':react-native-device-info').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-device-info/android')
+include ':shoutem.application'
+project(':shoutem.application').projectDir = new File(rootProject.projectDir, '../node_modules/shoutem.application/android')
+//NativeModuleInjectionMark-gradle-settings
+
+include ':app', ':react-native-code-push'
+project(':react-native-code-push').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-code-push/android/app')
+
+include ':react-native-maps'
+project(':react-native-maps').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-maps/lib/android')
+
+
+// packages above this line are added automatically when shoutem configure
+// is run - they should be discarded before pushing changes in this file
+
+include ':app'
+
+include ':@shoutem/ui-addons'
+project(':@shoutem/ui-addons').projectDir = new File(rootProject.projectDir, '../node_modules/@shoutem/ui-addons/android')
+
+include ':react-native-image-picker'
+project(':react-native-image-picker').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-image-picker/android')
+
+include ':react-native-linear-gradient'
+project(':react-native-linear-gradient').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-linear-gradient/android')
+
+include ':react-native-photo-view'
+project(':react-native-photo-view').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-photo-view/android')
+
+include ':react-native-vector-icons'
+project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')

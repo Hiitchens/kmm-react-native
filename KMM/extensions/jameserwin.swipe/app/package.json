@@ -1,0 +1,8 @@
+{
+  "name": "jameserwin.swipe",
+  "version": "0.0.1-build1546832977135-build1548207238825",
+  "description": "",
+  "dependencies": {
+    "react-native-swipeout": "^2.3.6"
+  }
+}
