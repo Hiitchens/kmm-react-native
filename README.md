@@ -38,16 +38,12 @@ Press File -> Workspace Options -> Set build setting to "Legacy Build"
 ** For more info to install react native see https://facebook.github.io/react-native/docs/getting-started
 
 ## Screenshots:
-![alt text](https://github.com/Hiitchens/test-repo/blob/master/myAwesomeProject/ChatDemo.gif)
-![alt text](https://github.com/Hiitchens/test-repo/blob/CompleteCondition/sampleGifs/MultiMediaPagewRating.gif)
-![alt text](https://i.imgur.com/izQ1Yv5.png)
+![alt text](https://github.com/Hiitchens/test-repo/blob/ColorRedesign/redesign/Login.PNG)
+![alt text](https://github.com/Hiitchens/test-repo/blob/ColorRedesign/redesign/GenInfo.PNG)
+![alt text](https://github.com/Hiitchens/test-repo/blob/ColorRedesign/redesign/Homecare.PNG)
+![alt text](https://github.com/Hiitchens/test-repo/blob/ColorRedesign/redesign/info.PNG)
 
-![alt text](https://imgur.com/4KndZyh.png)
+![alt text](https://github.com/Hiitchens/test-repo/blob/ColorRedesign/redesign/exercise.PNG)
 
-![alt text](https://imgur.com/OSYarUq.png)
-
-![alt text](https://imgur.com/sTRpvhq.png)
-
-![alt text](https://imgur.com/mdxBv4v.png)
-
+![alt text](https://github.com/Hiitchens/test-repo/blob/ColorRedesign/redesign/exercise%26rating.PNG)
 
