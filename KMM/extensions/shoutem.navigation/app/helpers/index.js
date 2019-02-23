@@ -5,6 +5,7 @@ import mapIsRootScreenToProps from './mapIsRootScreenToProps';
 import mapExtensionSettingsToProps from './mapExtensionSettingsToProps';
 import isTabBarNavigation from './isTabBarNavigation';
 import getRootScreen from './getRootScreen';
+import resolveScrollViewProps from './resolveScrollViewProps';
 
 export {
   Scaler,
@@ -14,4 +15,5 @@ export {
   shortcutChildrenRequired,
   isTabBarNavigation,
   getRootScreen,
+  resolveScrollViewProps,
 };

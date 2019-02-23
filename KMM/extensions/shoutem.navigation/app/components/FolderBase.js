@@ -51,7 +51,7 @@ const defaultResolution = {
  * Required props
  *  executeShortcut {redux action}
  */
-export default class FolderBase extends React.Component {
+export default class FolderBase extends React.PureComponent {
   static propTypes = {
     isRootScreen: PropTypes.bool,
     shortcut: PropTypes.object.isRequired,
@@ -126,10 +126,6 @@ export default class FolderBase extends React.Component {
     }, callback);
   }
 
-  isTabBarNavigation() {
-    return false;
-  }
-
    /**
    * Save new page width and height so it can be reused
    * Refresh dimension related state after updating page dimensions.
@@ -138,13 +134,8 @@ export default class FolderBase extends React.Component {
    * @param resolvedHeight Layout height after checking for TabBar navigation
    */
   layoutChanged({ nativeEvent: { layout: { width, height } } }) {
-    const resolvedHeight = Device.select({
-      iPhoneX: this.isTabBarNavigation() ? height : (height - IPHONE_X_HOME_INDICATOR_PADDING),
-      default: height,
-    });
-
     this.scaler.resolveRatioByWidth({ width, height }, defaultResolution);
-    this.updateDimensions(width, resolvedHeight);
+    this.updateDimensions(width, height);
   }
 
   /**
@@ -193,8 +184,10 @@ export default class FolderBase extends React.Component {
     return {
       style: {
         ...style.scrollView,
-        paddingTop: navBarPadding,
       },
+      contentContainerStyle: {
+        paddingTop: navBarPadding,
+      }
     };
   }
 

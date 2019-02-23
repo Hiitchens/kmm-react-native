@@ -1,9 +1,20 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import _ from 'lodash';
+import { connect } from 'react-redux';
 
 import { connectStyle } from '@shoutem/theme';
-import { CARD_LIST } from '../const';
+import { Device } from '@shoutem/ui';
+
+import {
+  CARD_LIST,
+  ext,
+  IPHONE_X_HOME_INDICATOR_PADDING,
+  IPHONE_X_NOTCH_PADDING,
+  NAVIGATION_HEADER_HEIGHT,
+  TAB_BAR_ITEM_HEIGHT,
+} from '../const';
+import { isTabBarNavigation, resolveScrollViewProps } from '../helpers';
 import CardListItem from './CardListItem';
 import FolderBase from './FolderBase';
 
@@ -24,6 +35,10 @@ class CardList extends FolderBase {
     // Is item full screen width
     isFullWidth: PropTypes.bool,
   };
+
+  resolveScrollViewProps() {
+    return resolveScrollViewProps(this.props);
+  }
 
   resolvePageProps() {
     const { style } = this.props;
@@ -77,4 +92,10 @@ const mapPropsToStyleNames = (styleNames, props) => {
   return styleNames;
 };
 
-export default connectStyle(CARD_LIST, undefined, mapPropsToStyleNames)(CardList);
+const mapStateToProps = (state) => ({
+  isTabBar: isTabBarNavigation(state),
+});
+
+export default connect(mapStateToProps)(
+  connectStyle(CARD_LIST, undefined, mapPropsToStyleNames)(CardList)
+);

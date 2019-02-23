@@ -9,7 +9,6 @@ import { next } from '@shoutem/redux-io';
 import { connectStyle } from '@shoutem/theme';
 import { navigateTo, openInModal, closeModal, navigateBack } from '@shoutem/core/navigation';
 import { NavigationBar } from '@shoutem/ui/navigation';
-
 import {
   Screen,
   Row,
@@ -26,6 +25,7 @@ import { I18n } from 'shoutem.i18n';
 
 import { getUser, isAuthenticated } from 'shoutem.auth/redux';
 
+import StatusView from '../components/StatusView';
 import {
   loadStatuses,
   createStatus,
@@ -33,9 +33,7 @@ import {
   unlikeStatus,
 } from '../redux';
 import { openProfileForLegacyUser } from '../services';
-
 import { ext } from '../const';
-import StatusView from '../components/StatusView';
 
 const { object } = PropTypes;
 

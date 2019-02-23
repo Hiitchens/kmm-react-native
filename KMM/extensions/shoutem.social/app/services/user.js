@@ -1,5 +1,7 @@
 import _ from 'lodash';
+
 import { openProfile } from 'shoutem.auth';
+
 import { loadUser } from '../redux';
 
 export function adaptSocialUserForProfileScreen(user) {

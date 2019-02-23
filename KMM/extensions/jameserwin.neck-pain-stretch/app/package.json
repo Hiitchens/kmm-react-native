@@ -1,0 +1,9 @@
+{
+  "name": "jameserwin.neck-pain-stretch",
+  "version": "0.0.1-build1550543386826-build1550878106275",
+  "description": "For holding neck pain stretching activites",
+  "dependencies": {
+    "react-native-emoji": "^1.3.1",
+    "react-native-table-component": "^1.2.0"
+  }
+}

@@ -1,9 +1,6 @@
 import PropTypes from 'prop-types';
-import React, {
-  Component,
-} from 'react';
+import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
-
 import { Alert, KeyboardAvoidingView } from 'react-native';
 
 import {
@@ -20,9 +17,7 @@ import {
   TouchableOpacity,
   ScrollView,
 } from '@shoutem/ui';
-
 import { connectStyle } from '@shoutem/theme';
-
 import { NavigationBar } from '@shoutem/ui/navigation';
 import { ImagePicker } from '@shoutem/ui-addons';
 
@@ -35,7 +30,7 @@ import { ext } from '../const';
 
 const { string, func, number, bool } = PropTypes;
 
-export class CreateStatusScreen extends Component {
+export class CreateStatusScreen extends PureComponent {
   static propTypes = {
     user: userShape.isRequired,
     onStatusCreated: func.isRequired,

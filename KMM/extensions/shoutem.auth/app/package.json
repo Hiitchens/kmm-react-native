@@ -1,6 +1,6 @@
 {
   "name": "shoutem.auth",
-  "version": "1.8.1-build1548762540966",
+  "version": "1.8.3-build1549378865319",
   "description": "Authentication extension that uses the Shoutem authentication backend.",
   "dependencies": {
     "buffer": "^4.5.1",

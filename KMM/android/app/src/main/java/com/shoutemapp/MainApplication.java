@@ -8,15 +8,10 @@ import com.RNFetchBlob.RNFetchBlobPackage;
 import org.wonday.pdf.RCTPdfView;
 import com.shoutem.webview.ShoutemWebViewExtensionPackage;
 import com.shoutem.places.ShoutemPlacesExtensionPackage;
-import com.shoutem.icalevents.ShoutemIcalEventsExtensionPackage;
 import com.idehub.GoogleAnalyticsBridge.GoogleAnalyticsBridgePackage;
 import com.xxsnakerxx.flurryanalytics.FlurryAnalyticsPackage;
 import com.shoutem.flurry.ShoutemFlurryExtensionPackage;
-import com.shoutem.calendar.CalendarManagerPackage;
-import com.shoutem.events.ShoutemEventsExtensionPackage;
 import com.shoutem.cms.ShoutemCmsExtensionPackage;
-import org.reactnative.camera.RNCameraPackage;
-import com.shoutem.camera.ShoutemCameraExtensionPackage;
 import com.facebook.reactnative.androidsdk.FBSDKPackage;
 import com.brentvatne.react.ReactVideoPackage;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
@@ -77,15 +72,10 @@ protected String getJSBundleFile() {
             new RCTPdfView(),
             new ShoutemWebViewExtensionPackage(),
             new ShoutemPlacesExtensionPackage(),
-            new ShoutemIcalEventsExtensionPackage(),
             new GoogleAnalyticsBridgePackage(),
             new FlurryAnalyticsPackage(),
             new ShoutemFlurryExtensionPackage(),
-            new CalendarManagerPackage(),
-            new ShoutemEventsExtensionPackage(),
             new ShoutemCmsExtensionPackage(),
-            new RNCameraPackage(),
-            new ShoutemCameraExtensionPackage(),
             new FBSDKPackage(mCallbackManager),
             new ReactVideoPackage(),
             new SplashScreenReactPackage(),

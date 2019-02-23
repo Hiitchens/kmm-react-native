@@ -1,9 +1,0 @@
-{
-  "name": "jameserwin.frozen-shoulder-strengthening",
-  "version": "0.0.1-build1548795770570",
-  "description": "",
-  "dependencies": {
-    "react-native-emoji": "^1.3.1",
-    "react-native-swipeout": "^2.3.6"
-  }
-}

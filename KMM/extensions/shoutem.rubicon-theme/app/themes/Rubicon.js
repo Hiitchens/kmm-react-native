@@ -164,6 +164,25 @@ export default (customVariables = {}) => {
           height: 60,
         },
       },
+      '.xxl-icon': {
+        icon: {
+          width: 70,
+          height: 70,
+        },
+      },
+      '.xxxl-icon': {
+        icon: {
+          width: 80,
+          height: 80,
+        },
+      },
+      '.xxxxl-icon': {
+        icon: {
+          width: 90,
+          height: 90,
+        },
+      },
+
 
       page: {
         [INCLUDE]: ['alignmentVariants'],
@@ -408,12 +427,41 @@ export default (customVariables = {}) => {
             paddingRight: variables.gridItemHorizontalGutter,
           },
         },
-
-        '.extraLarge-icon': {
-          text: {
-            marginBottom: 6,
-            marginTop: 6,
-          },
+      },
+      '.extraLarge-icon': {
+        text: {
+          height: 'auto',
+          marginTop: 6,
+          paddingTop: 4,
+          paddingBottom: 4,
+          fontSize: 11,
+        },
+      },
+      '.xxl-icon': {
+        text: {
+          height: 'auto',
+          marginTop: 8,
+          paddingTop: 6,
+          paddingBottom: 6,
+          fontSize: 12,
+        },
+      },
+      '.xxxl-icon': {
+        text: {
+          height: 'auto',
+          marginTop: 12,
+          paddingTop: 8,
+          paddingBottom: 8,
+          fontSize: 13,
+        },
+      },
+      '.xxxxl-icon': {
+        text: {
+          height: 'auto',
+          marginTop: 16,
+          paddingTop: 8,
+          paddingBottom: 10,
+          fontSize: 14,
         },
       },
 
