@@ -38,6 +38,8 @@ Press File -> Workspace Options -> Set build setting to "Legacy Build"
 ** For more info to install react native see https://facebook.github.io/react-native/docs/getting-started
 
 ## Screenshots:
+
+![alt_text](https://github.com/Hiitchens/test-repo/blob/March03/dynamicNotifications.gif)
 ![alt text](https://github.com/Hiitchens/test-repo/blob/ColorRedesign/redesign/Login.PNG)
 ![alt text](https://github.com/Hiitchens/test-repo/blob/ColorRedesign/redesign/GenInfo.PNG)
 ![alt text](https://github.com/Hiitchens/test-repo/blob/ColorRedesign/redesign/Homecare.PNG)
