@@ -1,0 +1,9 @@
+{
+  "name": "jameserwin.neck-pain-strength",
+  "version": "0.0.1-build1550543138240-build1551120974299",
+  "description": "",
+  "dependencies": {
+    "react-native-emoji": "^1.3.1",
+    "react-native-table-component": "^1.2.0"
+  }
+}

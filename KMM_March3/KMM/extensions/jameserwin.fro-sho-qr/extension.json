@@ -1,0 +1,38 @@
+{
+  "name": "fro-sho-qr",
+  "title": "Fro sho qr",
+  "version": "0.0.11",
+  "description": "",
+  "platform": "1.0.*",
+  "screens": [
+    {
+      "name": "FrozenShoulderQuickRate"
+    },
+    {
+      "name": "NeckPainQR"
+    },
+    {
+      "name": "PlantarFasciitisQR"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "FrozenShoulderQuickRate",
+      "title": "Frozen shoulder quick rate",
+      "description": "A shortcut for FrozenShoulderQuickRate",
+      "screen": "@.FrozenShoulderQuickRate"
+    },
+    {
+      "name": "NeckPainQR",
+      "title": "Neck pain qr",
+      "description": "A shortcut for NeckPainQR",
+      "screen": "@.NeckPainQR"
+    },
+    {
+      "name": "PlantarFasciitisQR",
+      "title": "Plantar fasciitis qr",
+      "description": "A shortcut for PlantarFasciitisQR",
+      "screen": "@.PlantarFasciitisQR"
+    }
+  ]
+}

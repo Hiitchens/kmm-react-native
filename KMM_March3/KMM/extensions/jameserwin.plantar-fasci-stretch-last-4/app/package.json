@@ -1,0 +1,9 @@
+{
+  "name": "jameserwin.plantar-fasci-stretch-last-4",
+  "version": "0.0.1-build1551157213277-build1551667760522",
+  "description": "",
+  "dependencies": {
+    "react-native-emoji": "^1.3.1",
+    "react-native-table-component": "^1.2.0"
+  }
+}

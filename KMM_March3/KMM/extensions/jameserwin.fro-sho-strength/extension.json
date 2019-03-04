@@ -1,0 +1,47 @@
+{
+  "name": "fro-sho-strength",
+  "title": "Fro sho strength",
+  "version": "0.0.5",
+  "description": "",
+  "platform": "1.0.*",
+  "screens": [
+    {
+      "name": "WallWalk"
+    },
+    {
+      "name": "Flexion"
+    },
+    {
+      "name": "ExtensionwTowelWand"
+    },
+    {
+      "name": "AbductionAdduction"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "WallWalk",
+      "title": "Wall walk",
+      "description": "A shortcut for WallWalk",
+      "screen": "@.WallWalk"
+    },
+    {
+      "name": "Flexion",
+      "title": "Flexion",
+      "description": "A shortcut for Flexion",
+      "screen": "@.Flexion"
+    },
+    {
+      "name": "ExtensionwTowelWand",
+      "title": "Extensionw towel wand",
+      "description": "A shortcut for ExtensionwTowelWand",
+      "screen": "@.ExtensionwTowelWand"
+    },
+    {
+      "name": "AbductionAdduction",
+      "title": "Abduction adduction",
+      "description": "A shortcut for AbductionAdduction",
+      "screen": "@.AbductionAdduction"
+    }
+  ]
+}

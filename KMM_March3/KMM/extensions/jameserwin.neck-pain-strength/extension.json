@@ -1,0 +1,38 @@
+{
+  "name": "neck-pain-strength",
+  "title": "Neck-pain-strength",
+  "version": "0.0.2",
+  "description": "",
+  "platform": "1.0.*",
+  "screens": [
+    {
+      "name": "ForearmRotationBladeSqueeze"
+    },
+    {
+      "name": "HandClaspShoSqueeze"
+    },
+    {
+      "name": "RowingEx"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "ForearmRotationBladeSqueeze",
+      "title": "Forearm rotation blade squeeze",
+      "description": "A shortcut for ForearmRotationBladeSqueeze",
+      "screen": "@.ForearmRotationBladeSqueeze"
+    },
+    {
+      "name": "HandClaspShoSqueeze",
+      "title": "Hand clasp sho squeeze",
+      "description": "A shortcut for HandClaspShoSqueeze",
+      "screen": "@.HandClaspShoSqueeze"
+    },
+    {
+      "name": "RowingEx",
+      "title": "Rowing ex",
+      "description": "A shortcut for RowingEx",
+      "screen": "@.RowingEx"
+    }
+  ]
+}

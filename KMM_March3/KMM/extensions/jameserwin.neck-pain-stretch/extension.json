@@ -1,0 +1,38 @@
+{
+  "name": "neck-pain-stretch",
+  "title": "Neck pain stretch",
+  "version": "0.0.16",
+  "description": "For holding neck pain stretching activites",
+  "platform": "1.0.*",
+  "screens": [
+    {
+      "name": "NeckStretch"
+    },
+    {
+      "name": "DoorwaySttretch"
+    },
+    {
+      "name": "TowelRoll"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "NeckStretch",
+      "title": "Neck stretch",
+      "description": "A shortcut for NeckStretch",
+      "screen": "@.NeckStretch"
+    },
+    {
+      "name": "DoorwaySttretch",
+      "title": "Doorway sttretch",
+      "description": "A shortcut for DoorwaySttretch",
+      "screen": "@.DoorwaySttretch"
+    },
+    {
+      "name": "TowelRoll",
+      "title": "Towel roll",
+      "description": "A shortcut for TowelRoll",
+      "screen": "@.TowelRoll"
+    }
+  ]
+}

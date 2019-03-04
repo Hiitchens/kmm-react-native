@@ -1,0 +1,47 @@
+{
+  "name": "plantar-fasci-stretch-last-4",
+  "title": "Plantar-fasci-stretch-last4",
+  "version": "0.2.0",
+  "description": "",
+  "platform": "1.0.*",
+  "screens": [
+    {
+      "name": "PlantarFasciaStretch"
+    },
+    {
+      "name": "HamstringStretch"
+    },
+    {
+      "name": "PlantarFasciaWallStretch"
+    },
+    {
+      "name": "DowelBroom"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "PlantarFasciaStretch",
+      "title": "Plantar fascia stretch",
+      "description": "A shortcut for PlantarFasciaStretch",
+      "screen": "@.PlantarFasciaStretch"
+    },
+    {
+      "name": "HamstringStretch",
+      "title": "Hamstring stretch",
+      "description": "A shortcut for HamstringStretch",
+      "screen": "@.HamstringStretch"
+    },
+    {
+      "name": "PlantarFasciaWallStretch",
+      "title": "Plantar fascia wall stretch",
+      "description": "A shortcut for PlantarFasciaWallStretch",
+      "screen": "@.PlantarFasciaWallStretch"
+    },
+    {
+      "name": "DowelBroom",
+      "title": "Dowel broom",
+      "description": "A shortcut for DowelBroom",
+      "screen": "@.DowelBroom"
+    }
+  ]
+}
