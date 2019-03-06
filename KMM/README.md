@@ -1,2 +1,1 @@
-# platform
-Shoutem platform
+
