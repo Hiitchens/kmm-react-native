@@ -1,23 +1,21 @@
 // @flow
-import React, {
-  Component,
-} from 'react';
-
+import React, { PureComponent } from 'react';
+import _ from 'lodash';
 import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Alert, Platform, Keyboard } from 'react-native';
-import _ from 'lodash';
-
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
+import {
+  Alert,
+  Platform,
+  Keyboard,
+  KeyboardAvoidingView,
+} from 'react-native';
 
 import { connectStyle } from '@shoutem/theme';
 import { ImagePicker, ActionSheet } from '@shoutem/ui-addons';
 import { openInModal, navigateBack } from '@shoutem/core/navigation';
 import { NavigationBar } from '@shoutem/ui/navigation';
-
 import { isBusy, isInitialized, next, hasNext } from '@shoutem/redux-io';
-
 import {
   Button,
   ListView,
@@ -28,6 +26,7 @@ import {
   Icon,
   ImageBackground,
   Row,
+  ScrollView,
 } from '@shoutem/ui';
 
 import { authenticate } from 'shoutem.auth';
@@ -38,7 +37,6 @@ import CommentView from '../components/CommentView';
 import AutoGrowTextInput from '../components/AutoGrowTextInput';
 import { user as userShape } from '../components/shapes';
 import { ext } from '../const';
-
 import {
   loadComments,
   createComment,
@@ -49,7 +47,7 @@ import { openProfileForLegacyUser } from '../services';
 
 const { array, number, func, bool } = PropTypes;
 
-export class StatusDetailsScreen extends Component {
+export class StatusDetailsScreen extends PureComponent {
   static propTypes = {
     user: userShape.isRequired,
     comments: PropTypes.shape({
@@ -354,10 +352,11 @@ export class StatusDetailsScreen extends Component {
 
   render() {
     const { enableComments, comments } = this.props;
+
     const addCommentSection = enableComments ? this.renderAddCommentSection() : null;
     const commentsData = _.get(comments, 'data', []);
-
     const areCommentsLoading = isBusy(comments) && !isInitialized(comments);
+    const keyboardViewBehavior = Platform.OS === 'ios' ? 'position' : null;
 
     return (
       <Screen styleName="paper">
@@ -366,20 +365,18 @@ export class StatusDetailsScreen extends Component {
           renderRightComponent={this.renderRightComponent}
         />
         <Divider styleName="line" />
-        <KeyboardAwareScrollView
-          enableAutoAutomaticScroll={(Platform.OS === 'ios')}
-          enableOnAndroid
-          keyboardShouldPersistTaps="always"
-        >
-          <ListView
-            data={[...commentsData]}
-            ref={this.captureScrollViewRef}
-            loading={areCommentsLoading}
-            renderHeader={this.renderStatus}
-            renderRow={this.renderRow}
-          />
-          {areCommentsLoading ? null : addCommentSection}
-        </KeyboardAwareScrollView>
+        <ScrollView>
+          <KeyboardAvoidingView behavior={keyboardViewBehavior}>
+            <ListView
+              data={[...commentsData]}
+              ref={this.captureScrollViewRef}
+              loading={areCommentsLoading}
+              renderHeader={this.renderStatus}
+              renderRow={this.renderRow}
+            />
+            {areCommentsLoading ? null : addCommentSection}
+          </KeyboardAvoidingView>
+        </ScrollView>
       </Screen>
     );
   }

@@ -7,24 +7,18 @@ include ':shoutem.web-view'
 project(':shoutem.web-view').projectDir = new File(rootProject.projectDir, '../node_modules/shoutem.web-view/android')
 include ':shoutem.places'
 project(':shoutem.places').projectDir = new File(rootProject.projectDir, '../node_modules/shoutem.places/android')
-include ':shoutem.ical-events'
-project(':shoutem.ical-events').projectDir = new File(rootProject.projectDir, '../node_modules/shoutem.ical-events/android')
 include ':react-native-google-analytics-bridge'
 project(':react-native-google-analytics-bridge').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-google-analytics-bridge/android')
 include ':react-native-flurry-analytics'
 project(':react-native-flurry-analytics').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-flurry-analytics/android')
 include ':shoutem.flurry-analytics'
 project(':shoutem.flurry-analytics').projectDir = new File(rootProject.projectDir, '../node_modules/shoutem.flurry-analytics/android')
-include ':react-native-calendar-manager'
-project(':react-native-calendar-manager').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-calendar-manager/android')
-include ':shoutem.events'
-project(':shoutem.events').projectDir = new File(rootProject.projectDir, '../node_modules/shoutem.events/android')
+include ':react-native-fcm'
+project(':react-native-fcm').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fcm/android')
+include ':shoutem.firebase'
+project(':shoutem.firebase').projectDir = new File(rootProject.projectDir, '../node_modules/shoutem.firebase/android')
 include ':shoutem.cms'
 project(':shoutem.cms').projectDir = new File(rootProject.projectDir, '../node_modules/shoutem.cms/android')
-include ':react-native-camera'
-project(':react-native-camera').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-camera/android')
-include ':shoutem.camera'
-project(':shoutem.camera').projectDir = new File(rootProject.projectDir, '../node_modules/shoutem.camera/android')
 include ':react-native-fbsdk'
 project(':react-native-fbsdk').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fbsdk/android')
 include ':react-native-video'

@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { PureComponent } from 'react';
 import _ from 'lodash';
-
+import { connect } from 'react-redux';
+import Pdf from 'react-native-pdf';
 import {
   WebView,
   InteractionManager,
@@ -9,10 +10,7 @@ import {
   Platform,
 } from 'react-native';
 
-import { connect } from 'react-redux';
-import Pdf from 'react-native-pdf';
-
-import { View, Screen } from '@shoutem/ui';
+import { View, Screen, Spinner } from '@shoutem/ui';
 import { NavigationBar } from '@shoutem/ui/navigation';
 import { EmptyStateView } from '@shoutem/ui-addons';
 import { find } from '@shoutem/redux-io';
@@ -20,12 +18,12 @@ import { find } from '@shoutem/redux-io';
 import { I18n } from 'shoutem.i18n';
 import { currentLocation } from 'shoutem.cms';
 
-import { ext } from '../const';
 import NavigationToolbar from '../components/NavigationToolbar';
+import { ext } from '../const';
 
 const { bool, shape, string } = PropTypes;
 
-export class WebViewScreen extends React.Component {
+export class WebViewScreen extends PureComponent {
   static propTypes = {
     shortcut: shape({
       settings: shape({
@@ -51,8 +49,6 @@ export class WebViewScreen extends React.Component {
 
     this.state = {
       webNavigationState: {},
-      isAnimationFinished: false,
-      schema: ext('web-view'),
     };
 
     // componentWillReceiveProps() cannot be triggered due to
@@ -66,12 +62,6 @@ export class WebViewScreen extends React.Component {
     if (requireGeolocationPermission && !isLocationAvailable && _.isFunction(checkPermissionStatus)) {
       checkPermissionStatus();
     }
-  }
-
-  componentDidMount() {
-    InteractionManager.runAfterInteractions(() => {
-      this.setState({ isAnimationFinished: true });
-    });
   }
 
   onNavigationStateChange(webState) {
@@ -122,10 +112,20 @@ export class WebViewScreen extends React.Component {
     );
   }
 
+  renderLoadingSpinner() {
+    return (
+      <View styleName="xl-gutter-top">
+        <Spinner styleName="lg-gutter-top" />
+      </View>
+    );
+  }
+
   resolveWebViewProps(isAndroid) {
     const { url, requireGeolocationPermission } = this.getSettings();
     const defaultWebViewProps = {
       ref: this.setWebViewRef,
+      startInLoadingState: true,
+      renderLoading: this.renderLoadingSpinner,
       onNavigationStateChange: this.onNavigationStateChange,
       source: { uri: url },
       scalesPageToFit: true,
@@ -145,24 +145,20 @@ export class WebViewScreen extends React.Component {
     const { url } = this.getSettings();
     const isAndroid = Platform.OS === 'android';
 
-    if (this.state.isAnimationFinished) {
-      if(url.includes(".pdf") && isAndroid) {
-        return (
-          <Pdf
-            source={{ uri: url }}
-            style={{ flex: 1, width: Dimensions.get('window').width }}
-          />
-        );
-      }
-
+    if(url.includes(".pdf") && isAndroid) {
       return (
-        <WebView
-          {...this.resolveWebViewProps(isAndroid)}
+        <Pdf
+          source={{ uri: url }}
+          style={{ flex: 1, width: Dimensions.get('window').width }}
         />
       );
     }
 
-    return (<View />);
+    return (
+      <WebView
+        {...this.resolveWebViewProps(isAndroid)}
+      />
+    );
   }
 
   renderWebNavigation() {
@@ -214,6 +210,4 @@ export class WebViewScreen extends React.Component {
   }
 }
 
-export default connect(null, null)(
-  currentLocation(WebViewScreen)
-);
+export default connect()(currentLocation(WebViewScreen));

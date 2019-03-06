@@ -1,0 +1,47 @@
+{
+  "name": "fro-sho-stretch",
+  "title": "Fro sho stretch",
+  "version": "0.1.1",
+  "description": "",
+  "platform": "1.0.*",
+  "screens": [
+    {
+      "name": "CrossBodyReach"
+    },
+    {
+      "name": "PendulumSwing"
+    },
+    {
+      "name": "HangingArmChairStretch"
+    },
+    {
+      "name": "GravityStretch"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "CrossBodyReach",
+      "title": "Cross body reach",
+      "description": "A shortcut for CrossBodyReach",
+      "screen": "@.CrossBodyReach"
+    },
+    {
+      "name": "PendulumSwing",
+      "title": "Pendulum swing",
+      "description": "A shortcut for PendulumSwing",
+      "screen": "@.PendulumSwing"
+    },
+    {
+      "name": "HangingArmChairStretch",
+      "title": "Hanging arm chair stretch",
+      "description": "A shortcut for HangingArmChairStretch",
+      "screen": "@.HangingArmChairStretch"
+    },
+    {
+      "name": "GravityStretch",
+      "title": "Gravity stretch",
+      "description": "A shortcut for GravityStretch",
+      "screen": "@.GravityStretch"
+    }
+  ]
+}

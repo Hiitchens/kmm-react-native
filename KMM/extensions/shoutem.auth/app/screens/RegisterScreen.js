@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import {
   Alert,
 } from 'react-native';
@@ -13,6 +13,7 @@ import { Screen, Spinner } from '@shoutem/ui';
 import { getAppId } from 'shoutem.application';
 import { I18n } from 'shoutem.i18n';
 
+import RegisterForm from '../components/RegisterForm';
 import {
   register,
   userRegistered,
@@ -24,11 +25,10 @@ import {
   getErrorCode,
   getErrorMessage,
 } from '../errorMessages';
-import RegisterForm from '../components/RegisterForm';
 
 const AUTH_ERROR = 'auth_auth_notAuthorized_userAuthenticationError';
 
-export class RegisterScreen extends Component {
+export class RegisterScreen extends PureComponent {
   static propTypes = {
     navigateBack: PropTypes.func,
     register: PropTypes.func,
@@ -109,11 +109,8 @@ export const mapDispatchToProps = {
   userRegistered,
 };
 
-function mapStateToProps(state, ownProps) {
-  const { manualApprovalActive } = ownProps;
-
+function mapStateToProps(state) {
   return {
-    manualApprovalActive: manualApprovalActive,
     user: state[ext()].user,
     appId: getAppId(),
   };

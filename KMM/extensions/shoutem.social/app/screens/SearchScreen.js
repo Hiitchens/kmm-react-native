@@ -1,7 +1,4 @@
-import React, {
-  Component,
-} from 'react';
-
+import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import _ from 'lodash';
 
@@ -9,7 +6,6 @@ import { connectStyle } from '@shoutem/theme';
 import { NavigationBar } from '@shoutem/ui/navigation';
 import { navigateBack } from '@shoutem/core/navigation';
 import { SearchField } from '@shoutem/ui-addons';
-
 import {
   ListView,
   Screen,
@@ -19,14 +15,13 @@ import {
   Subtitle,
 } from '@shoutem/ui';
 
-import { openProfileForLegacyUser } from '../services';
 import { I18n } from 'shoutem.i18n';
 
-import { ext } from '../const';
 import MemberView from '../components/MemberView';
+import { openProfileForLegacyUser } from '../services';
+import { ext } from '../const';
 
-export class SearchScreen extends Component {
-
+export class SearchScreen extends PureComponent {
   constructor(props) {
     super(props);
     this.renderRightComponent = this.renderRightComponent.bind(this);

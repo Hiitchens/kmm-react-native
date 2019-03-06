@@ -4,7 +4,11 @@
 
 // screens imports
 import FrozenShoulderQuickRate from './screens/FrozenShoulderQuickRate';
+import NeckPainQR from './screens/NeckPainQR';
+import PlantarFasciitisQR from './screens/PlantarFasciitisQR';
 
 export const screens = {
-  FrozenShoulderQuickRate
+  FrozenShoulderQuickRate,
+  NeckPainQR,
+  PlantarFasciitisQR
 };

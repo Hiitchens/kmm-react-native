@@ -1,0 +1,47 @@
+{
+  "name": "plantar-fasci-stretch",
+  "title": "Plantar fasci stretch",
+  "version": "0.1.1",
+  "description": "",
+  "platform": "1.0.*",
+  "screens": [
+    {
+      "name": "NWB_CalfStretch"
+    },
+    {
+      "name": "NWB_SoleusStretch"
+    },
+    {
+      "name": "WB_CalfStretch"
+    },
+    {
+      "name": "WB_SoleusStretch"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "NWB_CalfStretch",
+      "title": "Nwb_calf stretch",
+      "description": "A shortcut for NWB_CalfStretch",
+      "screen": "@.NWB_CalfStretch"
+    },
+    {
+      "name": "NWB_SoleusStretch",
+      "title": "Nwb_soleus stretch",
+      "description": "A shortcut for NWB_SoleusStretch",
+      "screen": "@.NWB_SoleusStretch"
+    },
+    {
+      "name": "WB_CalfStretch",
+      "title": "Wb_calf stretch",
+      "description": "A shortcut for WB_CalfStretch",
+      "screen": "@.WB_CalfStretch"
+    },
+    {
+      "name": "WB_SoleusStretch",
+      "title": "Wb_soleus stretch",
+      "description": "A shortcut for WB_SoleusStretch",
+      "screen": "@.WB_SoleusStretch"
+    }
+  ]
+}

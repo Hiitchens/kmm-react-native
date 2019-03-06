@@ -3,14 +3,18 @@ import React from 'react';
 import _ from 'lodash';
 import { connect } from 'react-redux';
 
-import { dimensionRelativeToIphone } from '@shoutem/ui';
+import { dimensionRelativeToIphone, Device } from '@shoutem/ui';
 import { connectStyle } from '@shoutem/theme';
 
 import {
   LIST,
   ext,
+  IPHONE_X_HOME_INDICATOR_PADDING,
+  IPHONE_X_NOTCH_PADDING,
+  NAVIGATION_HEADER_HEIGHT,
+  TAB_BAR_ITEM_HEIGHT,
 } from '../const';
-import { isTabBarNavigation } from '../helpers';
+import { isTabBarNavigation, resolveScrollViewProps } from '../helpers';
 import ListItem from './ListItem';
 import FolderBase from './FolderBase';
 
@@ -23,18 +27,18 @@ class List extends FolderBase {
     backgroundImage: PropTypes.string,
   };
 
-  isTabBarNavigation() {
-    return this.props.isTabBar;
+  resolveScrollViewProps() {
+    return resolveScrollViewProps(this.props);
   }
 
   resolvePageProps() {
     const { topOffset, listAlignment } = this.getLayoutSettings();
     const { dimensions: { height } } = this.state;
     const { style } = this.props;
+
     return {
       style: {
         paddingTop: dimensionRelativeToIphone(topOffset),
-        // Min height stretch page so list can be vertically aligned
         minHeight: height,
         ...style.page,
       },

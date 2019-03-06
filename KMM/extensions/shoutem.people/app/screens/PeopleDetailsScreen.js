@@ -12,7 +12,7 @@ import {
   Button,
   Icon,
   View,
-  Html,
+  SimpleHtml,
   ScrollView,
 } from '@shoutem/ui';
 import { connectStyle } from '@shoutem/theme';
@@ -117,7 +117,7 @@ class PeopleDetailsScreen extends React.Component {
               <Caption styleName="h-center">{person.profession}</Caption>
             </View>
 
-            <Html body={person.biography} />
+            <SimpleHtml body={person.biography} />
           </View>
 
           {this.renderFooterButtons()}

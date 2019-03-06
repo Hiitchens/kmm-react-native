@@ -175,15 +175,12 @@ dependencies {
     compile project(':react-native-pdf')
     compile project(':shoutem.web-view')
     compile project(':shoutem.places')
-    compile project(':shoutem.ical-events')
     compile project(':react-native-google-analytics-bridge')
     compile project(':react-native-flurry-analytics')
     compile project(':shoutem.flurry-analytics')
-    compile project(':react-native-calendar-manager')
-    compile project(':shoutem.events')
+    compile project(':react-native-fcm')
+    compile project(':shoutem.firebase')
     compile project(':shoutem.cms')
-    compile project(':react-native-camera')
-    compile project(':shoutem.camera')
     compile project(':react-native-fbsdk')
     compile project(':react-native-video')
     compile project(':react-native-splash-screen')
@@ -192,6 +189,11 @@ dependencies {
     compile project(':react-native-device-info')
     compile project(':shoutem.application')
     //NativeModuleInjectionMark-app-gradle-dependencies
+    
+    compile project(':react-native-fcm')
+    compile "com.google.firebase:firebase-core:${rootProject.ext.firebaseVersion}"
+    compile "com.google.firebase:firebase-messaging:${rootProject.ext.firebaseVersion}"
+
     compile project(':react-native-code-push')
     compile project(':react-native-maps')
     compile project(':@shoutem/ui-addons')
@@ -219,3 +221,4 @@ task copyDownloadableDepsToLibs(type: Copy) {
 }
 
 //NativeModuleInjectionMark-app-gradle-plugins
+apply plugin: "com.google.gms.google-services"

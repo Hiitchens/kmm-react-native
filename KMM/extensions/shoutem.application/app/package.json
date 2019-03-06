@@ -1,6 +1,6 @@
 {
   "name": "shoutem.application",
-  "version": "1.8.0-build1548450748906",
+  "version": "1.8.3-build1550072082748",
   "private": true,
   "main": "index.js",
   "peerDependencies": {

@@ -1,11 +1,6 @@
 import _ from 'lodash';
-
 import PropTypes from 'prop-types';
-
-import React, {
-  Component,
-} from 'react';
-
+import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
 import { Modal } from 'react-native';
 
@@ -22,26 +17,23 @@ import {
   Title,
   View,
 } from '@shoutem/ui';
-
 import { NavigationBar } from '@shoutem/ui/navigation';
 import { connectStyle } from '@shoutem/theme';
-
 import { closeModal, openInModal } from '@shoutem/core/navigation';
+
+import { I18n } from 'shoutem.i18n';
 
 import { user as userShape } from '../components/shapes';
 import ProfileImage from '../components/ProfileImage';
-
 import {
   getUser,
   logout,
 } from '../redux';
-
-import { I18n } from 'shoutem.i18n';
 import { ext } from '../const';
 
 const { func } = PropTypes;
 
-export class UserProfileScreen extends Component {
+export class UserProfileScreen extends PureComponent {
   static propTypes = {
     // Closes the modal in which the edit profile screen is opened
     closeModal: func,

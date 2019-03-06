@@ -25,7 +25,7 @@
     <key>CFBundleVersion</key>
     <string>1</string>
     <key>LSApplicationCategoryType</key>
-    <string>Book</string>
+    <string>Reference</string>
     <key>FacebookAppID</key>
     <string>{facebook-app-id}</string>
     <key>FacebookDisplayName</key>

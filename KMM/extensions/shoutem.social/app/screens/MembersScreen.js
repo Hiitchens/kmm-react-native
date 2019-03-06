@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
+import React from 'react';
 import { InteractionManager } from 'react-native';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import * as _ from 'lodash';
+import _ from 'lodash';
 
 import { isBusy, isInitialized } from '@shoutem/redux-io';
 import { connectStyle } from '@shoutem/theme';
@@ -15,7 +15,6 @@ import {
   updateStatus,
   validationStatus
 } from '@shoutem/redux-io/status';
-
 import {
   ListView,
   View,
@@ -25,11 +24,11 @@ import {
 
 import { ListScreen } from 'shoutem.application';
 
+import MemberView from '../components/MemberView';
+import { user as userShape } from '../components/shapes';
 import { loadUsers } from '../redux';
 import { openProfileForLegacyUser } from '../services';
 import { ext } from '../const';
-import MemberView from '../components/MemberView';
-import { user as userShape } from '../components/shapes';
 
 export class MembersScreen extends ListScreen {
   static propTypes = {

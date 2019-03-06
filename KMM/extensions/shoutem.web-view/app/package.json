@@ -1,6 +1,6 @@
 {
   "name": "shoutem.web-view",
-  "version": "1.8.0-build1548451906351",
+  "version": "1.8.1-build1549994171911",
   "main": "index.js",
   "dependencies": {
     "react-native-pdf": "shoutem/react-native-pdf#99d40ad932f1c2001453bc019225511398824e8f",

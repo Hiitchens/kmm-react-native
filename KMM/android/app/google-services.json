@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "919664702801",
+    "firebase_url": "https://seext-89468.firebaseio.com",
+    "project_id": "seext-89468",
+    "storage_bucket": "seext-89468.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919664702801:android:ed890af5ef36bd82",
+        "android_client_info": {
+          "package_name": "com.shoutemapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919664702801-ogrst01epskfv7a2jlkt12q8a98psa52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1oDYytxA86VN0w3xcZoPmP1kEWjYca3Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
